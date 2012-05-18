@@ -90,6 +90,7 @@ AUTHENTICATION_BACKENDS = (
     'social_auth.backends.contrib.odnoklassniki.OdnoklassnikiBackend',
     'social_auth.backends.contrib.vkontakte.VKontakteOAuth2Backend',
     'social_auth.backends.contrib.mailru.MailruBackend',
+    'social_auth.backends.contrib.dailymile.DailymileBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -101,6 +102,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
     'social_auth.context_processors.social_auth_by_type_backends',
 )
+
+DAILYMILE_CLIENT_ID = 'BoRjjn4NZFaoPIBrRg3RA1f32b33x205JbK3t5yW'
+DAILYMILE_CLIENT_SECRET = 'zvhFQjds1BKDwhm4ITIJS5gJhppDHBud4jILf6Nz'
 
 LOGIN_REDIRECT_URL = '/'
 
