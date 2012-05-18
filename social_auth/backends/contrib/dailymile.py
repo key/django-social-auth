@@ -27,17 +27,13 @@ class DailymileBackend(OAuthBackend):
     """dailymile OAuth2 authentication backend"""
     name = 'dailymile'
 
-    def get_user_id(self):
-        return None
+    def get_user_id(self, details, response):
+        return response['username']
 
     def get_user_details(self, response):
-        import pdb; pdb.set_trace()
         return {
-            USERNAME: None,
-            'email': None,
-            'fullname': None,
-            'first_name': None,
-            'last_name': None,
+            USERNAME: response['username'],
+            'email': '',
         }
 
 
