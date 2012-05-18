@@ -36,6 +36,8 @@ FOURSQUARE_CONSUMER_SECRET        = ''
 YANDEX_OAUTH2_CLIENT_KEY          = ''
 YANDEX_OAUTH2_CLIENT_SECRET       = ''
 YANDEX_OAUTH2_API_URL             = 'https://api-yaru.yandex.ru/me/' # http://api.moikrug.ru/v1/my/ for Moi Krug
+DAILYMILE_CLIENT_ID               = ''
+DAILYMILE_CLIENT_SECRET           = ''
 
 # Backward compatibility
 YANDEX_APP_ID = YANDEX_OAUTH2_CLIENT_KEY
